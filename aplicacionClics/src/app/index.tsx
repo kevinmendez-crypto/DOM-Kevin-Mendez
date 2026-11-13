@@ -27,3 +27,5 @@ export default function App() {
         <Text style={estilos.description}>
           Haz clic en el botón para incrementar el contador y registrar la hora exacta del evento en la tabla.
         </Text>
+        <Text style={estilos.counterBox}>{contador}</Text>
+        
