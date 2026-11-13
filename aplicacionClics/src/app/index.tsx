@@ -19,3 +19,11 @@ export default function App() {
     };
     setRegistros([nuevoRegistro, ...registros]);
   };
+
+  return (
+    <View style={estilos.body}>
+      <View style={estilos.container}>
+        <Text style={estilos.h1}>Interactividad con el DOM</Text>
+        <Text style={estilos.description}>
+          Haz clic en el botón para incrementar el contador y registrar la hora exacta del evento en la tabla.
+        </Text>
