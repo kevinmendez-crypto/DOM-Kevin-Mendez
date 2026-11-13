@@ -59,3 +59,22 @@ export default function App() {
     </View>
   );
 }
+
+const estilos = StyleSheet.create({
+  body: { flex: 1, backgroundColor: "#f4f7f6", justifyContent: "center", alignItems: "center", padding: 20 },
+  container: { backgroundColor: "#ffffff", padding: 20, borderRadius: 12, width: "100%", maxWidth: 380, elevation: 4, alignItems: "center" },
+  h1: { fontSize: 20, fontWeight: "bold", color: "#333", textAlign: "center", marginBottom: 8 },
+  description: { fontSize: 13, color: "#666", textAlign: "center", marginBottom: 15 },
+  counterBox: { fontSize: 48, color: "#2196F3", fontWeight: "bold", marginBottom: 20 },
+  btnClick: { backgroundColor: "#4CAF50", padding: 12, borderRadius: 8, width: "100%", alignItems: "center", marginBottom: 20 },
+  btnText: { color: "white", fontSize: 16, fontWeight: "bold" },
+  tableContainer: { width: "100%", maxHeight: 180, borderWidth: 1, borderColor: "#ddd", borderRadius: 6 },
+  tableHeader: { flexDirection: "row", backgroundColor: "#f8f9fa", borderBottomWidth: 1, borderBottomColor: "#ddd", paddingVertical: 8 },
+  tableBody: { maxHeight: 130 },
+  tr: { flexDirection: "row", borderBottomWidth: 1, borderBottomColor: "#eee", paddingVertical: 8 },
+  trEven: { backgroundColor: "#fafafa" },
+  td: { fontSize: 13, color: "#333", textAlign: "center" },
+  th: { fontSize: 13, fontWeight: "bold", color: "#333", textAlign: "center" },
+  cellNumero: { flex: 1 },
+  cellHora: { flex: 1 },
+});
