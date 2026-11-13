@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {ScrollView,StyleSheet,Text,TouchableOpacity,View,} from "react-native";
+import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 
 export default function App() {
   const [contador, setContador] = useState(0);
@@ -34,3 +34,28 @@ export default function App() {
         >
           <Text style={estilos.btnText}>¡Haz Clic Aquí!</Text>
         </TouchableOpacity>
+        <View style={estilos.tableContainer}>
+          <View style={estilos.tableHeader}>
+            <Text style={[estilos.th, estilos.cellNumero]}>N° Clic</Text>
+            <Text style={[estilos.th, estilos.cellHora]}>Hora</Text>
+          </View>
+
+          <ScrollView style={estilos.tableBody}>
+            {registros.map((item, index) => (
+              <View
+                key={item.id}
+                style={[
+                  estilos.tr,
+                  index % 2 === 0 ? estilos.trEven : null,
+                ]}
+              >
+                <Text style={[estilos.td, estilos.cellNumero]}>{item.numero}</Text>
+                <Text style={[estilos.td, estilos.cellHora]}>{item.hora}</Text>
+              </View>
+            ))}
+          </ScrollView>
+        </View>
+      </View>
+    </View>
+  );
+}
